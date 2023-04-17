@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useState } from 'react';
 import { Form, FormControl, Button, Table } from 'react-bootstrap';
 
-const SearchBox = ({ items }) => {
+const SearchPage = ({ items }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchBy, setSearchBy] = useState('name');
   const [results, setResults] = useState([]);
@@ -69,4 +69,4 @@ const SearchBox = ({ items }) => {
   );
 };
 
-export default SearchBox;
+export default SearchPage;
