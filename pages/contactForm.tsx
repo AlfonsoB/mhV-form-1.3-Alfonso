@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './contactForm.scss';
 import { Button, Col } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import { addEntry } from './store';
+import { addEntry } from '../store/';
 
 export default function contactForm() {
   const dispatch = useDispatch();
