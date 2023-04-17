@@ -6,7 +6,7 @@ function NavBar(props) {
   const navigate = useNavigate();
 
   const handleButtonClick = (path) => {
-    navigate('/path');
+    navigate(path);
   };
 
   return (
@@ -20,11 +20,16 @@ function NavBar(props) {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="nav-bar-collapsed">
         <NavLink
-          as={Link}
-          to="/contactPage"
+          onClick={() => handleButtonClick('/')}
+          className="btn btn-outline-danger"
+        >
+          {props.contactButton}
+        </NavLink>
+        <NavLink
+          onClick={() => handleButtonClick('/search')}
           className="btn btn-outline-primary mr-2"
         >
-          {props.button1Name}
+          {props.searchButton}
         </NavLink>
         <NavLink as={Link} to="/searchPage" className="btn btn-outline-danger">
           {props.sear}
