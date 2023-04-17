@@ -17,8 +17,8 @@ export default function App() {
       />
       <Switch>
         <Routes>
-          <Route path="/">element={<ContactPage />}</Route>
-          <Route path="/search">element={<SearchPage />}</Route>
+          <Route path="/" element={<ContactPage />} />
+          <Route path="/search" element={<SearchPage />} />
         </Routes>
       </Switch>
       <Footer />
