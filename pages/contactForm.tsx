@@ -56,7 +56,7 @@ export default function contactForm() {
     <div>
       <div className="card-top">
         <h1 style={{ textAlign: 'center' }}>
-          We'd <i>Love</i> to hear from <b>You</b>!
+          We'd love to hear from <b>You</b>!
         </h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam
@@ -105,8 +105,4 @@ export default function contactForm() {
       </form>
     </div>
   );
-}
-
-function dispatch(arg0: { payload: any; type: 'entries/addEntry' }) {
-  throw new Error('Function not implemented.');
 }

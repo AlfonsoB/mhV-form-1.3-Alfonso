@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Navbar, NavLink } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import { AiOutlineFileSearch } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 import './navBar.scss';
 function NavBar(props) {
   const navigate = useNavigate();
@@ -30,9 +31,6 @@ function NavBar(props) {
           className="btn btn-outline-primary mr-2"
         >
           {props.searchButton}
-        </NavLink>
-        <NavLink as={Link} to="/searchPage" className="btn btn-outline-danger">
-          {props.sear}
         </NavLink>
       </Navbar.Collapse>
     </Navbar>
