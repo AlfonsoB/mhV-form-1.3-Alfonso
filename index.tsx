@@ -2,8 +2,8 @@ import * as React from 'react';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './homePage';
-import SearchPage from './searchPage';
+import contactPage from './pages/contactPage';
+import SearchPage from './pages/searchPage';
 import NavBar from './navBar';
 import Footer from './footer';
 import { BrowserRouter, Router, Route, Switch } from 'react-router-dom';
@@ -26,7 +26,7 @@ root.render(
           />
           <Switch>
             <Route path="/contact">
-              <Home />
+              <contactPage />
             </Route>
             <Route path="/search">
               <SearchPage />

@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { useState } from 'react';
-import './contactPage.scss';
+import './contactForm.scss';
 import { Button, Col } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { addEntry } from './store';
 
-export default function ContactPage() {
+export default function contactForm() {
   const dispatch = useDispatch();
   const entries = useSelector((state) => state.entries);
   const [name, setName] = useState('');
