@@ -7,3 +7,13 @@
   height: 50px;
   width: 100%;
 }
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.nav-links a {
+  padding: 0px 30px;
+}

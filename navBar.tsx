@@ -18,21 +18,14 @@ function NavBar(props) {
           src="https://github.com/AlfonsoB/react-form-contact-us-5-Alfonso/blob/main/images/MHV2.png?raw=true"
         />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav" className="nav-bar-collapsed">
-        <NavLink
-          onClick={() => handleButtonClick('/')}
-          className="btn btn-outline-danger"
-        >
+      <div className="nav-links">
+        <NavLink onClick={() => handleButtonClick('/')}>
           {props.contactButton}
         </NavLink>
-        <NavLink
-          onClick={() => handleButtonClick('/search')}
-          className="btn btn-outline-primary mr-2"
-        >
+        <NavLink onClick={() => handleButtonClick('/search')}>
           {props.searchButton}
         </NavLink>
-      </Navbar.Collapse>
+      </div>
     </Navbar>
   );
 }
