@@ -5,10 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './homePage';
 import NavBar from './navBar';
 import Footer from './footer';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import './style.css';
 import { Provider } from 'react-redux';
 import store from './store';
+import { Switch } from 'react-native/types';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -23,7 +24,11 @@ root.render(
             contactButton="Contact"
             searchButton="Search"
           />
-          <Home />
+          <Switch>
+            <Route path="/contactPage">
+              <Home />
+            </Route>
+          </Switch>
           <Footer />
         </div>
       </BrowserRouter>

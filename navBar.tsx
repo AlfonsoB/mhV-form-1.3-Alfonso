@@ -1,8 +1,14 @@
 import * as React from 'react';
 import { Navbar, NavLink } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './navBar.scss';
 function NavBar(props) {
+  const navigate = useNavigate();
+
+  const handleButtonClick = (path) => {
+    navigate('/path');
+  };
+
   return (
     <Navbar className="nav-bar" bg="light" expand="true">
       <Navbar.Brand href="#">
